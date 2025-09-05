@@ -1,0 +1,123 @@
+footer {
+    background-color: rgb(65, 65, 65);
+    color: #fff;
+    padding: 50px 8vw 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+/* Horizontal divider */
+footer hr {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Footer content wrapper */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Left section */
+.footer-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+}
+
+.footer-content-left img {
+    width: 150px;
+}
+
+.footer-content-left p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Center section */
+.footer-content-center {
+    min-width: 150px;
+}
+
+.footer-content-center h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-content-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content-center ul li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-content-center ul li:hover {
+    color: #f0c040;
+}
+
+/* Right section */
+.footer-content-right {
+    min-width: 200px;
+}
+
+.footer-content-right h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social-icons p {
+    font-size: 0.9rem;
+}
+
+.footer-social-icons:hover {
+    transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        align-items: center;
+    }
+}
